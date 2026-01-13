@@ -12,8 +12,8 @@ export default {
         'cream-red': '#dc2626', // Red for Cream logo
       },
       fontFamily: {
-        'serif': ['Georgia', 'Times New Roman', 'serif'],
-        'sans': ['Arial', 'Helvetica', 'sans-serif'],
+        'title': ['Schoolbook Web', 'serif'],
+        'body': ['Lato', 'sans-serif'],
       },
     },
   },

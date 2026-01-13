@@ -9,8 +9,8 @@ const Network = () => {
 
         {/* Event Details */}
         <p className="text-lg text-gray-700 text-center mb-10">
-          On Friday 6 February 2026 we will be networking at Pentahotel from 4pm
-          - 5.30pm.
+          On Friday 6 February 2026 we will be networking at {"<Location>"} from
+          4pm - 5.30pm.
         </p>
 
         {/* Instructions */}
@@ -27,19 +27,7 @@ const Network = () => {
             </a>
             .
           </p>
-          <p className="mb-2">
-            Pentahotel Reading, Oxford Road, Reading RG1 7RH.
-          </p>
-          <p>
-            <a
-              href="https://pentahotels.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-ffc-blue-light underline hover:text-ffc-blue"
-            >
-              pentahotels.com
-            </a>
-          </p>
+          <p className="mb-2">{"<Full Location>"}</p>
         </div>
 
         {/* Images */}
