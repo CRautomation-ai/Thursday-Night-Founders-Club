@@ -11,6 +11,10 @@ export default {
         'ffc-blue-light': '#3b82f6', // Lighter blue for links
         'cream-red': '#dc2626', // Red for Cream logo
       },
+      fontFamily: {
+        'serif': ['Georgia', 'Times New Roman', 'serif'],
+        'sans': ['Arial', 'Helvetica', 'sans-serif'],
+      },
     },
   },
   plugins: [],
