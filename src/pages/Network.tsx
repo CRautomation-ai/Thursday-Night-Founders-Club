@@ -3,7 +3,7 @@ const Network = () => {
     <div className="min-h-screen bg-white py-16 px-4 flex items-center">
       <div className="max-w-6xl mx-auto w-full">
         {/* Main Title */}
-        <h1 className="text-4xl md:text-5xl font-bold text-ffc-blue text-center mb-6">
+        <h1 className="text-4xl md:text-5xl font-bold text-ffc-blue text-center mb-16">
           Join us at our next networking event
         </h1>
 

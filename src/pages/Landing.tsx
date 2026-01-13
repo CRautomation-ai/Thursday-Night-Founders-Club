@@ -2,7 +2,7 @@ import logo from "../assets/ffc_logo.png";
 
 const Landing = () => {
   return (
-    <div className="min-h-screen relative">
+    <div className="relative">
       {/* Background Image with Overlay - only for landing page */}
       <div className="absolute inset-0 z-0">
         <div
@@ -30,16 +30,16 @@ const Landing = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="relative z-10 min-h-[80vh] flex items-center justify-center pt-20">
+      <section className="relative z-10 h-[70vh] flex items-center justify-center">
         {/* Content Overlay */}
-        <div className="text-center px-4 py-20 max-w-4xl mx-auto">
+        <div className="text-center px-4 py-10 max-w-4xl mx-auto">
           {/* Welcome Text */}
-          <p className="text-pink-400 text-base md:text-lg font-sans mb-8">
+          <p className="text-pink-400 text-base md:text-lg font-sans mb-6">
             Welcome to the club
           </p>
 
           {/* Main Headline */}
-          <h1 className="text-white text-4xl md:text-6xl lg:text-7xl font-serif mb-16 leading-tight">
+          <h1 className="text-white text-4xl md:text-6xl lg:text-7xl font-serif mb-10 leading-tight">
             <div className="block">Reading's premier</div>
             <div className="block">networking events</div>
           </h1>
