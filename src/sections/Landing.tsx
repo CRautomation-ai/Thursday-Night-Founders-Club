@@ -2,7 +2,7 @@ import logo from "../assets/ffc_logo.png";
 
 const Landing = () => {
   return (
-    <div className="relative h-[70vh]">
+    <div className="relative h-[80vh]">
       {/* Background Image with Overlay - only for landing page */}
       <div className="absolute inset-0 z-0">
         <div
