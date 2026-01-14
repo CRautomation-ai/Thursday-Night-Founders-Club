@@ -1,40 +1,39 @@
-interface SocialIconsProps {
-  email?: string;
-  linkedInUrl?: string;
-  facebookUrl?: string;
-}
+import { FaLinkedin, FaFacebookF } from "react-icons/fa6";
+import { IoMailOutline } from "react-icons/io5";
 
-const SocialIcons = ({ 
-  email = 'admin@firstfridayclubreading.com',
-  linkedInUrl = 'https://linkedin.com',
-  facebookUrl = 'https://facebook.com'
-}: SocialIconsProps) => {
+const SocialIcons = () => {
+  const email = "admin@firstfridayclubreading.com";
+  const linkedInUrl = "https://www.linkedin.com/groups/3941628/profile";
+  const facebookUrl = "https://www.facebook.com/FFCRDG/";
+
   return (
     <div className="flex justify-center gap-6">
-      <a 
-        href={linkedInUrl} 
-        target="_blank" 
+      <a
+        href={linkedInUrl}
+        target="_blank"
         rel="noopener noreferrer"
-        className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors"
+        className="w-12 h-12 rounded-full flex items-center justify-center transition-[filter] hover:brightness-110"
+        style={{ backgroundColor: "#116ac2" }}
         aria-label="LinkedIn"
       >
-        <span className="text-white font-bold text-lg">in</span>
+        <FaLinkedin className="text-white text-xl" />
       </a>
-      <a 
-        href={facebookUrl} 
-        target="_blank" 
+      <a
+        href={facebookUrl}
+        target="_blank"
         rel="noopener noreferrer"
-        className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors"
+        className="w-12 h-12 rounded-full flex items-center justify-center transition-[filter] hover:brightness-110"
+        style={{ backgroundColor: "#3b5998" }}
         aria-label="Facebook"
       >
-        <span className="text-white font-bold text-lg">f</span>
+        <FaFacebookF className="text-white text-xl" />
       </a>
-      <a 
+      <a
         href={`mailto:${email}`}
         className="w-12 h-12 bg-black rounded-full flex items-center justify-center hover:bg-gray-800 transition-colors"
         aria-label="Email"
       >
-        <span className="text-white text-xl">✉</span>
+        <IoMailOutline className="text-white text-xl" />
       </a>
     </div>
   );
