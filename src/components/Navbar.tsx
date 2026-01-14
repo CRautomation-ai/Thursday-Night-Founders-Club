@@ -20,53 +20,49 @@ const Navbar = ({ isVisible = true, useBg = true }: NavbarProps) => {
         backgroundColor: useBg ? "#001d3c" : "transparent",
       }}
     >
-      <div
-        className={`${
-          useBg ? "max-w-7xl mx-auto" : "w-full"
-        } flex items-center justify-between`}
-      >
+      <div className="w-full flex items-center justify-between">
         <div className="flex items-center gap-3">
           <img
             src={logo}
             alt="First Friday Club Logo"
-            className="h-8 md:h-10 w-auto"
+            className="h-12 md:h-20 w-auto"
           />
         </div>
 
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden md:flex items-center gap-8 pt-2">
           <a
             href="#home"
-            className="text-cyan-400 uppercase font-body text-base hover:text-cyan-300 transition-colors"
+            className="text-cyan-400 uppercase font-body text-md hover:text-cyan-300 transition-colors tracking-widest"
           >
             HOME
           </a>
           <a
             href="#members"
-            className="text-white uppercase font-body text-base hover:text-cyan-300 transition-colors"
+            className="text-white uppercase font-body text-md hover:text-cyan-300 transition-colors tracking-widest"
           >
             MEMBERS
           </a>
           <a
             href="#venues"
-            className="text-white uppercase font-body text-base hover:text-cyan-300 transition-colors"
+            className="text-white uppercase font-body text-md hover:text-cyan-300 transition-colors tracking-widest"
           >
             VENUES
           </a>
           <a
             href="#gallery"
-            className="text-white uppercase font-body text-base hover:text-cyan-300 transition-colors"
+            className="text-white uppercase font-body text-md hover:text-cyan-300 transition-colors tracking-widest"
           >
             GALLERY
           </a>
           <a
             href="#take-the-mic"
-            className="text-white uppercase font-body text-base hover:text-cyan-300 transition-colors"
+            className="text-white uppercase font-body text-md hover:text-cyan-300 transition-colors tracking-widest"
           >
             TAKE THE MIC
           </a>
           <a
             href="#join"
-            className="text-white uppercase font-body text-base hover:text-cyan-300 transition-colors"
+            className="text-white uppercase font-body text-md hover:text-cyan-300 transition-colors tracking-widest"
           >
             JOIN
           </a>
