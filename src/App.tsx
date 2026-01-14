@@ -16,7 +16,6 @@ function App() {
         const scrollY = window.scrollY || window.pageYOffset;
         const joinSectionTop = joinSection.offsetTop;
         setShowNavbar(scrollY >= joinSectionTop);
-        console.log(scrollY, joinSectionTop, showNavbar);
       }
     };
 
@@ -28,10 +27,9 @@ function App() {
 
   return (
     <div className="scroll-smooth">
-      <Navbar isVisible={showNavbar} />
+      <Navbar isVisible={showNavbar} useBg={true} />
       <Landing />
       <Network />
-
       <Support />
       <Join />
       <Contact />
