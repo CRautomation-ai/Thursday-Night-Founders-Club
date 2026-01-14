@@ -8,10 +8,7 @@ const Support = () => {
 
         <p className="text-center text-gray-700 mb-16 max-w-3xl mx-auto font-body">
           We are extremely grateful to our supporters and{" "}
-          <a
-            href="#venues"
-            className="text-ffc-blue-light hover:text-ffc-blue underline"
-          >
+          <a href="#venues" className="text-ffc-blue-light hover:text-ffc-blue">
             venues
           </a>{" "}
           for helping make our events a success every month.
