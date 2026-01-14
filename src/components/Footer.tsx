@@ -1,8 +1,8 @@
 const Footer = () => {
   return (
-    <div className="bg-blue-900 text-white py-12 px-4">
+    <div className="bg-blue-900 text-white py-12">
       <div className="max-w-6xl mx-auto">
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-2">
           <div>
             <nav className="space-y-3">
               <a
@@ -44,7 +44,7 @@ const Footer = () => {
             </nav>
           </div>
 
-          <div>
+          <div className="text-right md:text-right">
             <div className="mb-6">
               <div className="mb-1">First Friday Club</div>
               <div className="mb-1">7-11 Cross Street</div>
@@ -52,12 +52,11 @@ const Footer = () => {
             </div>
 
             <div className="mb-4 text-gray-300 text-sm">
-              <a href="#terms" className="underline hover:text-white">
-                Terms and conditions
-              </a>
-              {", "}
-              <a href="#cookie" className="underline hover:text-white">
-                cookie policy and privacy policy
+              <a
+                href="/terms-conditions"
+                className="underline hover:text-white"
+              >
+                Terms and conditions, cookie policy and privacy policy
               </a>
             </div>
 

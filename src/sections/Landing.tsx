@@ -4,7 +4,7 @@ const Landing = () => {
   return (
     <div className="relative h-[80vh]">
       {/* Background Image */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 animate-fade-in">
         <div
           className="w-full h-full bg-cover bg-center"
           style={{
@@ -15,11 +15,16 @@ const Landing = () => {
         <div className="absolute inset-0 backdrop-blur-sm bg-blue-900 bg-opacity-70"></div>
       </div>
 
-      <Navbar useBg={false} />
+      <div className="animate-fade-in-nav">
+        <Navbar useBg={false} />
+      </div>
 
       {/* Hero Section */}
       <section className="absolute inset-0 z-10 flex items-center justify-center">
-        <div className="text-center px-4 max-w-4xl mx-auto">
+        <div
+          className="text-center px-4 max-w-4xl mx-auto animate-fade-up"
+          style={{ animationDelay: "0.3s" }}
+        >
           <p
             className="text-xl md:text-3xl lg:text-4xl font-title mb-6 font-bold"
             style={{ color: "#e1007a" }}
