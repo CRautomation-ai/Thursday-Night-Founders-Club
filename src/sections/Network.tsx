@@ -1,6 +1,9 @@
 const Network = () => {
   return (
-    <div className="bg-white h-[100vh] py-16 px-4 flex items-center">
+    <div
+      id="network-section"
+      className="bg-white h-[100vh] py-16 px-4 flex items-center"
+    >
       <div className="max-w-6xl mx-auto w-full">
         {/* Main Title */}
         <h1 className="text-4xl md:text-5xl font-bold text-ffc-blue text-center mb-16 font-title">
