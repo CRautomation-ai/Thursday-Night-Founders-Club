@@ -16,16 +16,56 @@ const Landing = () => {
       </div>
 
       {/* Header */}
-      <header className="relative z-10 bg-transparent px-4 py-4 md:px-8">
-        <div className="max-w-7xl mx-auto flex items-center">
-          {/* Logo */}
+      <header className="relative z-10 px-4 py-4 md:px-8 bg-transparent">
+        <div className="w-full flex items-center justify-between">
+          {/* Logo and Brand Name */}
           <div className="flex items-center gap-3">
             <img
               src={logo}
               alt="First Friday Club Logo"
-              className="h-12 md:h-16 w-auto"
+              className="h-8 md:h-10 w-auto"
             />
           </div>
+
+          {/* Navigation Links */}
+          <nav className="hidden md:flex items-center gap-8">
+            <a
+              href="#home"
+              className="text-cyan-400 uppercase font-body text-base hover:text-cyan-300 transition-colors"
+            >
+              HOME
+            </a>
+            <a
+              href="#members"
+              className="text-white uppercase font-body text-base hover:text-cyan-300 transition-colors"
+            >
+              MEMBERS
+            </a>
+            <a
+              href="#venues"
+              className="text-white uppercase font-body text-base hover:text-cyan-300 transition-colors"
+            >
+              VENUES
+            </a>
+            <a
+              href="#gallery"
+              className="text-white uppercase font-body text-base hover:text-cyan-300 transition-colors"
+            >
+              GALLERY
+            </a>
+            <a
+              href="#take-the-mic"
+              className="text-white uppercase font-body text-base hover:text-cyan-300 transition-colors"
+            >
+              TAKE THE MIC
+            </a>
+            <a
+              href="#join"
+              className="text-white uppercase font-body text-base hover:text-cyan-300 transition-colors"
+            >
+              JOIN
+            </a>
+          </nav>
         </div>
       </header>
 

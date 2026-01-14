@@ -39,7 +39,7 @@ const Contact = () => {
           {/* Social Media Icons */}
           <div className="flex justify-center gap-6">
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/groups/3941628/profile"
               target="_blank"
               rel="noopener noreferrer"
               className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors"
@@ -47,7 +47,7 @@ const Contact = () => {
               <span className="text-white font-bold text-lg">in</span>
             </a>
             <a
-              href="https://facebook.com"
+              href="https://www.facebook.com/FFCRDG/"
               target="_blank"
               rel="noopener noreferrer"
               className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors"
@@ -55,7 +55,7 @@ const Contact = () => {
               <span className="text-white font-bold text-lg">f</span>
             </a>
             <a
-              href="mailto:admin@firstfridayclubreading.com"
+              href="admin@firstfridayclubreading.com"
               className="w-12 h-12 bg-black rounded-full flex items-center justify-center hover:bg-gray-800 transition-colors"
             >
               <span className="text-white text-xl">✉</span>
@@ -119,12 +119,11 @@ const Contact = () => {
               </div>
 
               <div className="mb-4 text-gray-300 text-sm">
-                <a href="#terms" className="underline hover:text-white">
-                  Terms and conditions
-                </a>
-                {", "}
-                <a href="#cookie" className="underline hover:text-white">
-                  cookie policy and privacy policy
+                <a
+                  href="/terms-conditions"
+                  className="underline hover:text-white"
+                >
+                  Terms and conditions, cookie policy and privacy policy
                 </a>
               </div>
 
