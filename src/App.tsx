@@ -1,6 +1,6 @@
-import Landing from './pages/Landing'
-import Network from './pages/Network'
-import Contact from './pages/Contact'
+import Landing from './sections/Landing'
+import Network from './sections/Network'
+import Contact from './sections/Contact'
 
 function App() {
   return (

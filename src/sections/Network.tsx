@@ -1,20 +1,20 @@
 const Network = () => {
   return (
-    <div className="min-h-screen bg-white py-16 px-4 flex items-center">
+    <div className="bg-white h-[100vh] py-16 px-4 flex items-center">
       <div className="max-w-6xl mx-auto w-full">
         {/* Main Title */}
-        <h1 className="text-4xl md:text-5xl font-bold text-ffc-blue text-center mb-16">
+        <h1 className="text-4xl md:text-5xl font-bold text-ffc-blue text-center mb-16 font-title">
           Join us at our next networking event
         </h1>
 
         {/* Event Details */}
-        <p className="text-lg text-gray-700 text-center mb-10">
+        <p className="text-lg text-gray-700 text-center mb-10 font-body">
           On Friday 6 February 2026 we will be networking at {"<Location>"} from
           4pm - 5.30pm.
         </p>
 
         {/* Instructions */}
-        <div className="text-center mb-16 text-gray-700 max-w-3xl mx-auto">
+        <div className="text-center mb-16 text-gray-700 max-w-3xl mx-auto font-body">
           <p className="mb-6">
             To join us please reply to our email invitation which will be sent
             the week before the event. To become a member and receive our

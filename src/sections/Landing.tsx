@@ -2,7 +2,7 @@ import logo from "../assets/ffc_logo.png";
 
 const Landing = () => {
   return (
-    <div className="relative">
+    <div className="relative h-[70vh]">
       {/* Background Image with Overlay - only for landing page */}
       <div className="absolute inset-0 z-0">
         <div
@@ -30,22 +30,22 @@ const Landing = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="relative z-10 h-[70vh] flex items-center justify-center">
+      <section className="relative z-10 h-full flex items-center justify-center">
         {/* Content Overlay */}
         <div className="text-center px-4 py-10 max-w-4xl mx-auto">
           {/* Welcome Text */}
-          <p className="text-pink-400 text-base md:text-lg font-sans mb-6">
+          <p className="text-pink-400 text-base md:text-lg font-title mb-6">
             Welcome to the club
           </p>
 
           {/* Main Headline */}
-          <h1 className="text-white text-4xl md:text-6xl lg:text-7xl font-serif mb-10 leading-tight">
+          <h1 className="text-white text-4xl md:text-6xl lg:text-7xl font-title mb-10 leading-tight">
             <div className="block">Reading's premier</div>
             <div className="block">networking events</div>
           </h1>
 
           {/* Call-to-Action Button */}
-          <button className="px-6 py-3 border border-white bg-transparent text-white uppercase font-sans text-xs md:text-sm hover:bg-blue-800 transition-colors">
+          <button className="px-6 py-3 border border-white bg-transparent text-white uppercase font-body text-xs md:text-sm hover:bg-blue-800 transition-colors">
             TAKE A LOOK AT OUR MOST RECENT EVENT
           </button>
         </div>

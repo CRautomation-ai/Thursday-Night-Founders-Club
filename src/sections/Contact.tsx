@@ -1,17 +1,17 @@
 const Contact = () => {
   return (
-    <div className="bg-white">
+    <div className="bg-white h-[100vh]">
       {/* White Background Section - Top two-thirds */}
-      <div className="bg-white py-20 px-4 min-h-[66vh] flex items-center">
+      <div className="bg-white py-20 px-4 h-[66vh] flex items-center">
         <div className="max-w-5xl mx-auto w-full">
           {/* Contact Information */}
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-ffc-blue mb-4">
+            <h2 className="text-4xl font-bold text-ffc-blue mb-4 font-title">
               Contact us
             </h2>
             <a
               href="mailto:admin@firstfridayclubreading.com"
-              className="text-ffc-blue-light text-lg hover:text-ffc-blue"
+              className="text-ffc-blue-light text-lg hover:text-ffc-blue font-body"
             >
               admin@firstfridayclubreading.com
             </a>
@@ -65,7 +65,7 @@ const Contact = () => {
       </div>
 
       {/* Dark Blue Footer - Bottom third */}
-      <div className="bg-blue-900 text-white py-12 px-4 min-h-[34vh] flex items-center">
+      <div className="bg-blue-900 text-white py-12 px-4 h-[34vh] flex items-center">
         <div className="max-w-6xl mx-auto w-full">
           <div className="grid md:grid-cols-2 gap-12">
             {/* Left Column - Navigation Links */}
