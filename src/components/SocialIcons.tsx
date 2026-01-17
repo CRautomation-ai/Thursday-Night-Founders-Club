@@ -2,7 +2,7 @@ import { FaLinkedin, FaFacebookF } from "react-icons/fa6";
 import { IoMailOutline } from "react-icons/io5";
 
 const SocialIcons = () => {
-  const email = "admin@firstfridayclubreading.com";
+  const email = "Thursdaynightfoundersclub@gmail.com";
   const linkedInUrl = "https://www.linkedin.com/groups/3941628/profile";
   const facebookUrl = "https://www.facebook.com/FFCRDG/";
 

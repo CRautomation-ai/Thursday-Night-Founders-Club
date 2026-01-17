@@ -1,3 +1,5 @@
+import venueImage from "../assets/venue_image.png";
+
 const Network = () => {
   return (
     <div
@@ -10,29 +12,33 @@ const Network = () => {
         </h1>
 
         <p className="text-xl md:text-2xl text-gray-700 text-center mb-10 font-body max-w-5xl mx-auto">
-          On Friday 6 February 2026 we will be networking at {"<Location>"} from
-          4pm - 5.30pm.
+          On February 5 2026 we will be networking at Natural Velocity, Docklands from 6pm - 7:30pm.
         </p>
 
         <div className="text-center mb-16 text-gray-700 max-w-4xl mx-auto font-body text-lg md:text-xl">
           <p className="mb-6">
-            To join us please reply to our email invitation which will be sent
-            the week before the event. To become a member and receive our
-            invitations please{" "}
-            <a href="#join" className="text-ffc-blue-light hover:text-ffc-blue">
+            To join us simply{" "}
+            <a href="/join" className="text-ffc-blue-light hover:text-ffc-blue">
               register here
-            </a>
-            .
+            </a>{" "}
+            and an email will be sent out confirming your attendance.
           </p>
-          <p className="mb-2">{"<Full Location>"}</p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-6">
-          <div className="bg-gray-200 aspect-[4/3] rounded-lg flex items-center justify-center overflow-hidden">
-            <span className="text-gray-500">Bar Area Image 1</span>
+          <div className="aspect-[4/3] rounded-lg overflow-hidden">
+            <img
+              src={venueImage}
+              alt="Natural Velocity Venue"
+              className="w-full h-full object-cover"
+            />
           </div>
-          <div className="bg-gray-200 aspect-[4/3] rounded-lg flex items-center justify-center overflow-hidden">
-            <span className="text-gray-500">Bar Area Image 2</span>
+          <div className="aspect-[4/3] rounded-lg overflow-hidden">
+            <img
+              src={venueImage}
+              alt="Natural Velocity Venue"
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
       </div>

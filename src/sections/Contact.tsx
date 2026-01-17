@@ -1,4 +1,3 @@
-import trcLogo from "../assets/trc_logo.png";
 import Footer from "../components/Footer";
 import SocialIcons from "../components/SocialIcons";
 
@@ -13,24 +12,11 @@ const Contact = () => {
               Contact us
             </h2>
             <a
-              href="mailto:admin@firstfridayclubreading.com"
+              href="mailto:Thursdaynightfoundersclub@gmail.com"
               className="text-ffc-blue-light text-lg hover:text-ffc-blue font-body"
             >
-              admin@firstfridayclubreading.com
+              Thursdaynightfoundersclub@gmail.com
             </a>
-          </div>
-
-          <div
-            className="flex flex-col md:flex-row justify-center items-center gap-16 mb-16 animate-fade-up"
-            style={{ animationDelay: "0.2s" }}
-          >
-            <div className="text-left md:text-center">
-              <img
-                src={trcLogo}
-                alt="The Reading Chronicle Logo"
-                className="h-16 md:h-20 w-auto mx-auto"
-              />
-            </div>
           </div>
 
           {/* Social Media Icons */}

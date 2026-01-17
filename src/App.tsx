@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Landing from "./sections/Landing";
 import Network from "./sections/Network";
+import WhyJoinUs from "./sections/WhyJoinUs";
 import Support from "./sections/Support";
 import Join from "./sections/Join";
 import Contact from "./sections/Contact";
@@ -30,6 +31,7 @@ function App() {
       <Navbar isVisible={showNavbar} useBg={true} />
       <Landing />
       <Network />
+      <WhyJoinUs />
       <Support />
       <Join />
       <Contact />
