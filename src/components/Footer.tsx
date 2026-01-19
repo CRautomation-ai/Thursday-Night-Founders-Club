@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div className="bg-black text-white py-12">
+    <div className="bg-main text-white py-12">
       <div className="max-w-6xl mx-auto">
         <div className="grid md:grid-cols-2 gap-2">
           <div>
@@ -13,7 +13,7 @@ const Footer = () => {
             <div className="mb-4 text-gray-300 text-sm">
               <a
                 href="/terms-conditions"
-                className="underline hover:text-tnfc-gold transition-colors"
+                className="underline hover:text-primary transition-colors"
               >
                 Terms and conditions, cookie policy and privacy policy
               </a>

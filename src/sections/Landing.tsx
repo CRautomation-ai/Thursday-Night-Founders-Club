@@ -12,7 +12,7 @@ const Landing = () => {
             backgroundImage: `url(${landingImage})`,
           }}
         ></div>
-        <div className="absolute inset-0 backdrop-blur-sm bg-black bg-opacity-70"></div>
+        <div className="absolute inset-0 backdrop-blur-sm bg-main bg-opacity-70"></div>
       </div>
 
       <div className="animate-fade-in-nav">
@@ -25,10 +25,7 @@ const Landing = () => {
           className="text-center px-4 max-w-4xl mx-auto animate-fade-up"
           style={{ animationDelay: "0.3s" }}
         >
-          <p
-            className="text-xl md:text-3xl lg:text-4xl font-title mb-6 font-bold"
-            style={{ color: "#FFD700" }}
-          >
+          <p className="text-xl md:text-3xl lg:text-4xl font-title mb-6 font-bold text-primary">
             Welcome to the club
           </p>
 

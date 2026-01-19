@@ -1,8 +1,8 @@
 const Join = () => {
   return (
-    <div className="bg-white h-[100vh] py-16 px-4 flex items-center">
+    <div id="join" className="bg-white h-[100vh] py-16 px-4 flex items-center">
       <div className="max-w-6xl mx-auto w-full">
-        <h2 className="text-4xl font-bold text-ffc-blue text-center mb-6 font-title">
+        <h2 className="text-4xl font-bold text-main text-center mb-6 font-title">
           Why Join the Thursday Night Founders Club
         </h2>
 
@@ -14,4 +14,4 @@ const Join = () => {
   );
 };
 
-export default Join;
+export default Join;  

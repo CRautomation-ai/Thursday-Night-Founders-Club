@@ -7,7 +7,7 @@ const Support = () => {
   return (
     <div className="bg-white py-16 px-4">
       <div className="max-w-6xl mx-auto w-full">
-        <h2 className="text-4xl font-bold text-ffc-blue text-center mb-6 font-title">
+        <h2 className="text-4xl font-bold text-main text-center mb-6 font-title">
           Our supporters.
         </h2>
 
@@ -17,7 +17,7 @@ const Support = () => {
             href="https://www.linkedin.com/company/natural-velocity/posts/?feedView=all"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-ffc-blue-light hover:text-ffc-blue"
+            className="text-primary hover:text-main"
           >
             venues
           </a>{" "}
@@ -35,7 +35,7 @@ const Support = () => {
               />
             </div>
 
-            <h3 className="text-2xl font-bold text-ffc-blue text-center mb-4 font-title">
+            <h3 className="text-2xl font-bold text-main text-center mb-4 font-title">
               Avass Media
             </h3>
 
@@ -54,7 +54,7 @@ const Support = () => {
               />
             </div>
 
-            <h3 className="text-2xl font-bold text-ffc-blue text-center mb-4 font-title">
+            <h3 className="text-2xl font-bold text-main text-center mb-4 font-title">
               Anchor AI
             </h3>
 
@@ -73,7 +73,7 @@ const Support = () => {
               />
             </div>
 
-            <h3 className="text-2xl font-bold text-ffc-blue text-center mb-4 font-title">
+            <h3 className="text-2xl font-bold text-main text-center mb-4 font-title">
               KJ Media
             </h3>
 
@@ -92,7 +92,7 @@ const Support = () => {
               />
             </div>
 
-            <h3 className="text-2xl font-bold text-ffc-blue text-center mb-4 font-title">
+            <h3 className="text-2xl font-bold text-main text-center mb-4 font-title">
               Natural Velocity
             </h3>
 

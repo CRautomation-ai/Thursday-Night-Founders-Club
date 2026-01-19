@@ -4,11 +4,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        "ffc-blue": "#000000", // Black for headers and footer
-        "ffc-blue-light": "#FFD700", // Gold for links and accents
-        "tnfc-black": "#000000", // Black
-        "tnfc-gold": "#FFD700", // Gold
-        "tnfc-gold-dark": "#D4AF37", // Darker gold variant
+        primary: "#FFD700", // Gold - main brand color
+        secondary: "#D4AF37", // Darker gold variant
+        main: "#000000", // Black - main dark color
       },
       fontFamily: {
         title: ["Schoolbook Web", "serif"],
