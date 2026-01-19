@@ -12,7 +12,8 @@ const Support = () => {
         </h2>
 
         <p className="text-center text-lg text-gray-700 mb-16 max-w-3xl mx-auto font-body">
-          We are <span className="whitespace-nowrap">extremely grateful</span> to our supporters and{" "}
+          We are <span className="whitespace-nowrap">extremely grateful</span>{" "}
+          to our supporters and{" "}
           <a
             href="https://www.linkedin.com/company/natural-velocity/posts/?feedView=all"
             target="_blank"
@@ -40,7 +41,12 @@ const Support = () => {
             </h3>
 
             <p className="text-gray-700 text-center font-body">
-              Avass Media is a growth-focused marketing partner dedicated to helping small and medium-sized businesses build a strong, modern digital presence. They specialise in leveraging social media marketing to turn attention into real business outcomes whether that's increased conversions, consistent lead flow, or scalable revenue growth.
+              Avass Media is a growth-focused marketing partner dedicated to
+              helping small and medium-sized businesses build a strong, modern
+              digital presence. They specialise in leveraging social media
+              marketing to turn attention into real business outcomes whether
+              that's increased conversions, consistent lead flow, or scalable
+              revenue growth.
             </p>
           </div>
 
@@ -59,7 +65,11 @@ const Support = () => {
             </h3>
 
             <p className="text-gray-700 text-center font-body">
-              Anchor AI is an AI automation partner helping businesses streamline operations, reduce manual workload, and scale smarter through intelligent systems. They design and implement custom AI agents and workflow automations that integrate seamlessly into existing tools, teams, and processes.
+              Anchor AI is an AI automation partner helping businesses
+              streamline operations, reduce manual workload, and scale smarter
+              through intelligent systems. They design and implement custom AI
+              agents and workflow automations that integrate seamlessly into
+              existing tools, teams, and processes.
             </p>
           </div>
 
@@ -78,7 +88,11 @@ const Support = () => {
             </h3>
 
             <p className="text-gray-700 text-center font-body">
-              KJ Media is a videography and photography studio specialising in high-impact cinematic content for brands. They create visually compelling assets that capture attention, tell authentic stories, and elevate how businesses present themselves across digital platforms.
+              KJ Media is a videography and photography studio specialising in
+              high-impact cinematic content for brands. They create visually
+              compelling assets that capture attention, tell authentic stories,
+              and elevate how businesses present themselves across digital
+              platforms.
             </p>
           </div>
 
@@ -97,7 +111,11 @@ const Support = () => {
             </h3>
 
             <p className="text-gray-700 text-center font-body">
-              Natural Velocity provides innovative solutions that are designed to accelerate the adoption of AI and cybersecurity technologies. Their focus is on ensuring that organisations can embrace these advancements in a responsible and secure manner, leading to increased business value and transformative innovation.
+              Natural Velocity provides innovative solutions that are designed
+              to accelerate the adoption of AI and cybersecurity technologies.
+              Their focus is on ensuring that organisations can embrace these
+              advancements in a responsible and secure manner, leading to
+              increased business value and transformative innovation.
             </p>
           </div>
         </div>

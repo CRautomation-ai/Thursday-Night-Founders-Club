@@ -13,12 +13,14 @@ const Join = () => {
         </h1>
 
         <p className="text-xl md:text-2xl text-gray-700 text-center mb-10 font-body max-w-5xl mx-auto">
-          On February 5 2026 we will be networking at Natural Velocity, Docklands from 6pm - 7:30pm.
+          On February 5 2026 we will be networking at Natural Velocity,
+          Docklands from 6pm - 7:30pm.
         </p>
 
         <div className="text-center mb-16 text-gray-700 max-w-4xl mx-auto font-body text-lg md:text-xl">
           <p className="mb-6">
-            To join us simply register below and an email will be sent out confirming your attendance.
+            To join us simply register below and an email will be sent out
+            confirming your attendance.
           </p>
         </div>
 
