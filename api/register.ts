@@ -1,5 +1,5 @@
 import type { VercelRequest, VercelResponse } from "@vercel/node";
-import { appendToGoogleSheet } from "./services/googleSheets";
+import { appendToGoogleSheet } from "./services/googleSheets.js";
 
 interface FormData {
   name: string;
