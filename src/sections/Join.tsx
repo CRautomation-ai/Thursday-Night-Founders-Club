@@ -1,9 +1,9 @@
 const Join = () => {
   return (
-    <div id="join" className="bg-white h-[100vh] py-16 px-4 flex items-center">
+    <div id="join" className="bg-white h-[100vh] py-16 px-4 flex items-center border-t border-gray-500">
       <div className="max-w-6xl mx-auto w-full">
-        <h2 className="text-4xl font-bold text-main text-center mb-6 font-title">
-          Why Join the Thursday Night Founders Club
+        <h2 className="text-3xl md:text-4xl font-extrabold text-primary text-center mb-7 font-title uppercase">
+          Why Join the Thursday Night Founders Clubs
         </h2>
 
         <p className="text-center text-gray-700 mb-12 max-w-4xl mx-auto font-body text-lg md:text-xl">

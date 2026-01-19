@@ -1,8 +1,8 @@
 const WhyJoinUs = () => {
   return (
-    <div className="bg-white py-16 px-4">
+    <div className="bg-white py-16 px-4 border-t border-gray-500">
       <div className="max-w-6xl mx-auto w-full">
-        <h2 className="text-4xl font-bold text-main text-center mb-6 font-title">
+        <h2 className="text-3xl md:text-4xl font-extrabold text-primary text-center mb-7 font-title uppercase">
           Why Join Us
         </h2>
 
@@ -16,7 +16,7 @@ const WhyJoinUs = () => {
 
         <div className="grid md:grid-cols-2 gap-8 mb-8 max-w-5xl mx-auto">
           <div className="bg-gray-50 p-6 rounded-lg">
-            <h3 className="text-xl font-bold text-main mb-4 font-title">
+            <h3 className="text-lg font-extrabold text-primary mb-4 font-title tracking-wide">
               Curated connections
             </h3>
             <p className="text-gray-700 font-body">
@@ -25,7 +25,7 @@ const WhyJoinUs = () => {
           </div>
 
           <div className="bg-gray-50 p-6 rounded-lg">
-            <h3 className="text-xl font-bold text-main mb-4 font-title">
+            <h3 className="text-lg font-extrabold text-primary mb-4 font-title tracking-wide">
               Real conversations
             </h3>
             <p className="text-gray-700 font-body">
@@ -34,7 +34,7 @@ const WhyJoinUs = () => {
           </div>
 
           <div className="bg-gray-50 p-6 rounded-lg">
-            <h3 className="text-xl font-bold text-main mb-4 font-title">
+            <h3 className="text-lg font-extrabold text-primary mb-4 font-title tracking-wide">
               Long-term relationships
             </h3>
             <p className="text-gray-700 font-body">
@@ -43,7 +43,7 @@ const WhyJoinUs = () => {
           </div>
 
           <div className="bg-gray-50 p-6 rounded-lg">
-            <h3 className="text-xl font-bold text-main mb-4 font-title">
+            <h3 className="text-lg font-extrabold text-primary mb-4 font-title tracking-wide">
               Relaxed, social atmosphere
             </h3>
             <p className="text-gray-700 font-body">

@@ -10,14 +10,14 @@ const Footer = () => {
           </div>
 
           <div className="text-right md:text-right">
-            <div className="mb-4 text-gray-300 text-sm">
+            {/* <div className="mb-4 text-gray-300 text-sm">
               <a
                 href="/terms-conditions"
                 className="underline hover:text-primary transition-colors"
               >
                 Terms and conditions, cookie policy and privacy policy
               </a>
-            </div>
+            </div> */}
 
             <div className="text-gray-300 text-sm">
               © Thursday Night Founders Club 2026

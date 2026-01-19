@@ -3,7 +3,7 @@ import landingImage from "../assets/landing_page_image.png";
 
 const Landing = () => {
   return (
-    <div className="relative h-[80vh]">
+    <div className="relative h-[85vh]">
       {/* Background Image */}
       <div className="absolute inset-0 z-0 animate-fade-in">
         <div

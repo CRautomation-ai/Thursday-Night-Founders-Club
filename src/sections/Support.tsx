@@ -5,14 +5,14 @@ import naturalVelocityLogo from "../assets/natural_velocity_logo.png";
 
 const Support = () => {
   return (
-    <div className="bg-white py-16 px-4">
+    <div className="bg-white py-16 px-4 border-t border-gray-500">
       <div className="max-w-6xl mx-auto w-full">
-        <h2 className="text-4xl font-bold text-main text-center mb-6 font-title">
+        <h2 className="text-3xl md:text-4xl font-extrabold text-primary text-center mb-7 font-title uppercase">
           Our supporters.
         </h2>
 
-        <p className="text-center text-gray-700 mb-16 max-w-3xl mx-auto font-body">
-          We are extremely grateful to our supporters and{" "}
+        <p className="text-center text-lg text-gray-700 mb-16 max-w-3xl mx-auto font-body">
+          We are <span className="whitespace-nowrap">extremely grateful</span> to our supporters and{" "}
           <a
             href="https://www.linkedin.com/company/natural-velocity/posts/?feedView=all"
             target="_blank"
@@ -35,7 +35,7 @@ const Support = () => {
               />
             </div>
 
-            <h3 className="text-2xl font-bold text-main text-center mb-4 font-title">
+            <h3 className="text-xl font-extrabold text-primary text-center mb-4 font-title tracking-wide">
               Avass Media
             </h3>
 
@@ -54,7 +54,7 @@ const Support = () => {
               />
             </div>
 
-            <h3 className="text-2xl font-bold text-main text-center mb-4 font-title">
+            <h3 className="text-xl font-extrabold text-primary text-center mb-4 font-title tracking-wide">
               Anchor AI
             </h3>
 
@@ -73,7 +73,7 @@ const Support = () => {
               />
             </div>
 
-            <h3 className="text-2xl font-bold text-main text-center mb-4 font-title">
+            <h3 className="text-xl font-extrabold text-primary text-center mb-4 font-title tracking-wide">
               KJ Media
             </h3>
 
@@ -92,7 +92,7 @@ const Support = () => {
               />
             </div>
 
-            <h3 className="text-2xl font-bold text-main text-center mb-4 font-title">
+            <h3 className="text-xl font-extrabold text-primary text-center mb-4 font-title tracking-wide">
               Natural Velocity
             </h3>
 

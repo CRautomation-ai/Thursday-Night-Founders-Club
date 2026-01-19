@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#FFD700", // Gold - main brand color
+        primary: "#a47d46", // Gold - main brand color
         secondary: "#D4AF37", // Darker gold variant
         main: "#000000", // Black - main dark color
       },

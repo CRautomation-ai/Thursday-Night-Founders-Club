@@ -4,10 +4,10 @@ const Network = () => {
   return (
     <div
       id="network-section"
-      className="bg-white h-[100vh] pt-24 pb-16 px-4 flex items-start"
+      className="bg-white h-[100vh] py-16 px-4 flex items-start border-t border-gray-500"
     >
       <div className="max-w-6xl mx-auto w-full">
-        <h1 className="text-4xl md:text-5xl font-bold text-main text-center mb-10 font-title">
+        <h1 className="text-3xl md:text-4xl font-extrabold text-primary text-center mb-7 font-title uppercase">
           Join us at our next networking event
         </h1>
 
