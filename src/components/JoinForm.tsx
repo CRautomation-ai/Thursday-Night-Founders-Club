@@ -1,4 +1,5 @@
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 const JoinForm = () => {
   const [errorMsg, setErrorMsg] = useState<string>("");
@@ -24,6 +25,7 @@ const JoinForm = () => {
     }
 
     try {
+      // Submit to Google Sheets via API
       const response = await fetch("/api/register", {
         method: "POST",
         headers: {
@@ -33,13 +35,36 @@ const JoinForm = () => {
       });
 
       if (!response.ok) {
-        console.error("Error submitting form:", response);
+        const result = await response.json();
+        throw new Error(result.err || "Failed to register");
       }
 
+      // Send confirmation email from client-side
+      await emailjs.send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        {
+          email: data.email, // Match the template variable name
+          to_name: data.name,
+          from_name: "Thursday Night Founders Club",
+          event_date: "February 5, 2026",
+          event_time: "6:00 PM - 7:30 PM",
+          event_venue: "Natural Velocity, Docklands",
+        },
+        {
+          publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+        },
+      );
+
       setErrorMsg("");
+      alert("Registration successful! Check your email for confirmation.");
     } catch (error) {
       console.error("Error submitting form:", error);
-      setErrorMsg("An error occurred. Please try again.");
+      setErrorMsg(
+        error instanceof Error
+          ? error.message
+          : "An error occurred. Please try again.",
+      );
     }
   };
 
