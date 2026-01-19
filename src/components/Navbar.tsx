@@ -1,22 +1,8 @@
 import logo from "../assets/tnfc_logo.png";
 
-interface NavbarProps {
-  isVisible?: boolean;
-  useBg?: boolean;
-}
-
-const Navbar = ({ isVisible = true, useBg = true }: NavbarProps) => {
-  const positionClass = useBg ? "fixed" : "relative";
-  const animationClass = useBg
-    ? `transition-transform duration-300 ease-in-out ${
-        isVisible ? "translate-y-0" : "-translate-y-full"
-      }`
-    : "";
-
+const Navbar = () => {
   return (
-    <nav
-      className={`${positionClass} top-0 left-0 right-0 z-50 px-4 py-4 md:px-8 ${animationClass} ${useBg ? "bg-main" : ""}`}
-    >
+    <nav className="relative top-0 left-0 right-0 z-50 px-4 py-4 md:px-8">
       <div className="w-full flex items-center justify-between">
         <div className="flex items-center gap-3">
           <img

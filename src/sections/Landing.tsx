@@ -12,11 +12,11 @@ const Landing = () => {
             backgroundImage: `url(${landingImage})`,
           }}
         ></div>
-        <div className="absolute inset-0 backdrop-blur-sm bg-main bg-opacity-70"></div>
+        <div className="absolute inset-0 bg-main bg-opacity-70"></div>
       </div>
 
       <div className="animate-fade-in-nav">
-        <Navbar useBg={false} />
+        <Navbar />
       </div>
 
       {/* Hero Section */}
