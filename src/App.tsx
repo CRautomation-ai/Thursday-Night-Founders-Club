@@ -1,5 +1,6 @@
 import Landing from "./sections/Landing";
-import Network from "./sections/Network";
+import Join from "./sections/Join";
+import Why from "./sections/Why";
 import WhyJoinUs from "./sections/WhyJoinUs";
 import Support from "./sections/Support";
 import Contact from "./sections/Contact";
@@ -8,9 +9,10 @@ function App() {
   return (
     <div className="scroll-smooth">
       <Landing />
-      <Network />
-      <Support />
+      <Join />
       <WhyJoinUs />
+      <Support />
+      <Why />
       <Contact />
     </div>
   );
