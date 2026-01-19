@@ -60,11 +60,7 @@ const JoinForm = () => {
       alert("Registration successful! Check your email for confirmation.");
     } catch (error) {
       console.error("Error submitting form:", error);
-      setErrorMsg(
-        error instanceof Error
-          ? error.message
-          : "An error occurred. Please try again.",
-      );
+      setErrorMsg("An error occurred. Please try again.");
     }
   };
 

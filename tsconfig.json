@@ -20,6 +20,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src", "services/sendEmail.ts", "services/googleSheets.ts"],
+  "include": ["src", "api/services/sendEmail.ts", "api/services/googleSheets.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
