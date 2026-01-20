@@ -3,7 +3,7 @@ import { IoMailOutline } from "react-icons/io5";
 
 const SocialIcons = () => {
   const email = "Thursdaynightfoundersclub@gmail.com";
-  const linkedInUrl = "https://www.linkedin.com/groups/3941628/profile";
+  const linkedInUrl = "https://www.linkedin.com/company/thursday-night-founders-club";
 
   return (
     <div className="flex justify-center gap-6">
