@@ -1,4 +1,8 @@
+import { useInView } from "../hooks/useInView";
+
 const WhyJoinUs = () => {
+  const [containerRef, isInView] = useInView();
+
   return (
     <div className="bg-white py-16 px-4 border-t border-gray-500">
       <div className="max-w-6xl mx-auto w-full">
@@ -16,8 +20,8 @@ const WhyJoinUs = () => {
           founders and operators, and have conversations that actually matter.
         </p>
 
-        <div className="grid md:grid-cols-2 gap-8 mb-8 max-w-5xl mx-auto">
-          <div className="bg-gray-50 p-6 rounded-lg">
+        <div ref={containerRef} className="grid md:grid-cols-2 gap-8 mb-8 max-w-5xl mx-auto">
+          <div className={`bg-gray-50 p-6 rounded-lg ${isInView ? "animate-slide-in-left" : "opacity-0"}`} style={{ animationDelay: "0.1s" }}>
             <h3 className="text-lg font-extrabold text-primary mb-4 font-title tracking-wide">
               Curated connections
             </h3>
@@ -27,7 +31,7 @@ const WhyJoinUs = () => {
             </p>
           </div>
 
-          <div className="bg-gray-50 p-6 rounded-lg">
+          <div className={`bg-gray-50 p-6 rounded-lg ${isInView ? "animate-slide-in-right" : "opacity-0"}`} style={{ animationDelay: "0.2s" }}>
             <h3 className="text-lg font-extrabold text-primary mb-4 font-title tracking-wide">
               Real conversations
             </h3>
@@ -37,7 +41,7 @@ const WhyJoinUs = () => {
             </p>
           </div>
 
-          <div className="bg-gray-50 p-6 rounded-lg">
+          <div className={`bg-gray-50 p-6 rounded-lg ${isInView ? "animate-slide-in-left" : "opacity-0"}`} style={{ animationDelay: "0.3s" }}>
             <h3 className="text-lg font-extrabold text-primary mb-4 font-title tracking-wide">
               Long-term relationships
             </h3>
@@ -47,7 +51,7 @@ const WhyJoinUs = () => {
             </p>
           </div>
 
-          <div className="bg-gray-50 p-6 rounded-lg">
+          <div className={`bg-gray-50 p-6 rounded-lg ${isInView ? "animate-slide-in-right" : "opacity-0"}`} style={{ animationDelay: "0.4s" }}>
             <h3 className="text-lg font-extrabold text-primary mb-4 font-title tracking-wide">
               Relaxed, social atmosphere
             </h3>

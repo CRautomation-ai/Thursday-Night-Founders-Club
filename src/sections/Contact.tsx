@@ -1,7 +1,10 @@
 import Footer from "../components/Footer";
 import SocialIcons from "../components/SocialIcons";
+import { useInView } from "../hooks/useInView";
 
 const Contact = () => {
+  const [socialRef, isInView] = useInView();
+
   return (
     <div className="bg-white h-[100vh] flex flex-col overflow-hidden border-t border-gray-500">
       {/* White Background Section - Top two-thirds */}
@@ -20,7 +23,7 @@ const Contact = () => {
           </div>
 
           {/* Social Media Icons */}
-          <div className="animate-fade-up" style={{ animationDelay: "0.4s" }}>
+          <div ref={socialRef} className={isInView ? "animate-fade-up" : "opacity-0"} style={{ animationDelay: "0.4s" }}>
             <SocialIcons />
           </div>
         </div>
