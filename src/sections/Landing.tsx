@@ -15,7 +15,7 @@ const Landing = () => {
         <div className="absolute inset-0 bg-main bg-opacity-70"></div>
       </div>
 
-      <div className="animate-fade-in-nav">
+      <div className="animate-fade-in-nav relative z-50">
         <Navbar />
       </div>
 
