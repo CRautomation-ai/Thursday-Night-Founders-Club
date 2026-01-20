@@ -29,7 +29,6 @@ export default async function handler(
       aboutBusiness,
     });
 
-    // Email is now sent from client-side
     return res.status(200).json({ success: true, message: "Registration successful" });
   } catch (error) {
     console.error("Registration error:", error);
