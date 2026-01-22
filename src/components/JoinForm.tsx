@@ -52,7 +52,7 @@ const JoinForm = () => {
       // Check if it's an EmailJS account blocked error
       const emailjsError = error as any;
       if (emailjsError?.status === 423 && emailjsError?.text === 'The account is blocked') {
-        setErrorMsg("Email service is temporarily unavailable. Your registration was saved successfully.");
+        setErrorMsg("The confimation email can't be sent temporarily. However, your registration was saved successfully.");
       } else {
         setErrorMsg("An error occurred. Please try again.");
       }
