@@ -29,9 +29,6 @@ const JoinForm = () => {
     }
 
     try {
-      // #region agent log
-      fetch('http://127.0.0.1:7242/ingest/37092be0-b4e0-42f6-bc04-cbd75e9b9857',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'JoinForm.tsx:31',message:'Before API call',data:{email:data.email,name:data.name},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'A'})}).catch(()=>{});
-      // #endregion
       const response = await fetch("/api/register", {
         method: "POST",
         headers: {
@@ -40,34 +37,25 @@ const JoinForm = () => {
         body: JSON.stringify(data),
       });
 
-      // #region agent log
-      fetch('http://127.0.0.1:7242/ingest/37092be0-b4e0-42f6-bc04-cbd75e9b9857',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'JoinForm.tsx:40',message:'API response received',data:{status:response.status,statusText:response.statusText,ok:response.ok},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'A'})}).catch(()=>{});
-      // #endregion
-
       if (!response.ok) {
         const result = await response.json();
-        // #region agent log
-        fetch('http://127.0.0.1:7242/ingest/37092be0-b4e0-42f6-bc04-cbd75e9b9857',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'JoinForm.tsx:43',message:'API error response',data:{status:response.status,error:result.err},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'A'})}).catch(()=>{});
-        // #endregion
         throw new Error(result.err || "Failed to register");
       }
 
-      // #region agent log
-      fetch('http://127.0.0.1:7242/ingest/37092be0-b4e0-42f6-bc04-cbd75e9b9857',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'JoinForm.tsx:45',message:'Before email send',data:{toEmail:data.email,toName:data.name},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'B'})}).catch(()=>{});
-      // #endregion
       await sendConfirmationEmail({ toEmail: data.email, toName: data.name });
-      // #region agent log
-      fetch('http://127.0.0.1:7242/ingest/37092be0-b4e0-42f6-bc04-cbd75e9b9857',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'JoinForm.tsx:46',message:'Email send successful',data:{},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'B'})}).catch(()=>{});
-      // #endregion
 
       setErrorMsg("");
       alert("Registration successful! Check your email for confirmation.");
     } catch (error) {
-      // #region agent log
-      fetch('http://127.0.0.1:7242/ingest/37092be0-b4e0-42f6-bc04-cbd75e9b9857',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'JoinForm.tsx:49',message:'Error caught in JoinForm',data:{errorMessage:error instanceof Error?error.message:'unknown',errorType:error instanceof Error?error.constructor.name:'unknown',errorString:String(error)},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'C'})}).catch(()=>{});
-      // #endregion
       console.error("Error submitting form:", error);
-      setErrorMsg("An error occurred. Please try again.");
+      
+      // Check if it's an EmailJS account blocked error
+      const emailjsError = error as any;
+      if (emailjsError?.status === 423 && emailjsError?.text === 'The account is blocked') {
+        setErrorMsg("Email service is temporarily unavailable. Your registration was saved successfully.");
+      } else {
+        setErrorMsg("An error occurred. Please try again.");
+      }
     } finally {
       setIsSending(false);
     }
