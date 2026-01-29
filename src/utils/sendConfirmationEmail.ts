@@ -1,4 +1,5 @@
 import emailjs from "@emailjs/browser";
+import { EVENT } from "../config/event";
 
 export interface ConfirmationEmailParams {
   toEmail: string;
@@ -16,9 +17,9 @@ export async function sendConfirmationEmail({
       email: toEmail, 
       to_name: toName,
       from_name: "Thursday Night Founders Club",
-      event_date: "February 5, 2026",
-      event_time: "6:00 PM - 7:30 PM",
-      event_venue: "Natural Velocity, Docklands",
+      event_date: EVENT.displayDate,
+      event_time: EVENT.time,
+      event_venue: EVENT.venue,
     },
     {
       publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
