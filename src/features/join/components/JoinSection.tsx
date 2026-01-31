@@ -1,8 +1,8 @@
-import venueImage from "../assets/venue_image.png";
-import JoinForm from "../components/JoinForm";
-import { EVENT } from "../config/event";
+import venueImage from "@/assets/venue_image.png";
+import JoinForm from "@/features/registration/components/JoinForm";
+import { EVENT } from "@/config/event";
 
-const Join = () => {
+const JoinSection = () => {
   return (
     <div
       id="join"
@@ -14,8 +14,7 @@ const Join = () => {
         </h1>
 
         <p className="text-xl md:text-2xl text-gray-700 text-center mb-10 font-body max-w-5xl mx-auto">
-          On {EVENT.displayDate} we will be networking at {EVENT.venue} from{" "}
-          {EVENT.time}.
+          On {EVENT.displayDate} we will be networking at {EVENT.venue} from {EVENT.time}.
         </p>
 
         <div className="text-center mb-16 text-gray-700 max-w-4xl mx-auto font-body text-lg md:text-xl">
@@ -27,11 +26,7 @@ const Join = () => {
 
         <div className="grid md:grid-cols-2 gap-6">
           <div className="aspect-[4/3] rounded-lg overflow-hidden">
-            <img
-              src={venueImage}
-              alt="Natural Velocity Venue"
-              className="w-full h-full object-cover"
-            />
+            <img src={venueImage} alt="Natural Velocity Venue" className="w-full h-full object-cover" />
           </div>
           <div className="flex items-center justify-center overflow-hidden">
             <div className="w-full max-w-full">
@@ -44,4 +39,4 @@ const Join = () => {
   );
 };
 
-export default Join;
+export default JoinSection;

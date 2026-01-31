@@ -20,7 +20,6 @@ const JoinForm = () => {
       aboutBusiness: formData.get("aboutBusiness") as string,
     };
 
-    // Validate email format
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(data.email)) {
       setErrorMsg("Invalid email format");
@@ -38,8 +37,16 @@ const JoinForm = () => {
       });
 
       if (!response.ok) {
-        const result = await response.json();
-        throw new Error(result.err || "Failed to register");
+        let message = "Failed to register";
+        try {
+          const result = await response.json();
+          message = result.err || message;
+        } catch {
+          message = response.status === 404
+            ? "Registration service unavailable. Try again later or check your connection."
+            : `Request failed (${response.status}).`;
+        }
+        throw new Error(message);
       }
 
       await sendConfirmationEmail({ toEmail: data.email, toName: data.name });
@@ -48,11 +55,9 @@ const JoinForm = () => {
       alert("Registration successful! Check your email for confirmation.");
     } catch (error) {
       console.error("Error submitting form:", error);
-      
-      // Check if it's an EmailJS account blocked error
-      const emailjsError = error as any;
-      if (emailjsError?.status === 423 && emailjsError?.text === 'The account is blocked') {
-        setErrorMsg("The confimation email can't be sent temporarily. However, your registration was saved successfully.");
+      const emailjsError = error as { status?: number; text?: string };
+      if (emailjsError?.status === 423 && emailjsError?.text === "The account is blocked") {
+        setErrorMsg("The confirmation email can't be sent temporarily. However, your registration was saved successfully.");
       } else {
         setErrorMsg("An error occurred. Please try again.");
       }
@@ -75,10 +80,7 @@ const JoinForm = () => {
 
       <form className="space-y-4 w-full" onSubmit={handleSubmit}>
         <div>
-          <label
-            htmlFor="name"
-            className="block text-gray-700 font-body text-sm mb-2"
-          >
+          <label htmlFor="name" className="block text-gray-700 font-body text-sm mb-2">
             Name
           </label>
           <input
@@ -91,10 +93,7 @@ const JoinForm = () => {
         </div>
 
         <div>
-          <label
-            htmlFor="email"
-            className="block text-gray-700 font-body text-sm mb-2"
-          >
+          <label htmlFor="email" className="block text-gray-700 font-body text-sm mb-2">
             Email
           </label>
           <input
@@ -107,10 +106,7 @@ const JoinForm = () => {
         </div>
 
         <div>
-          <label
-            htmlFor="businessName"
-            className="block text-gray-700 font-body text-sm mb-2"
-          >
+          <label htmlFor="businessName" className="block text-gray-700 font-body text-sm mb-2">
             Business Name
           </label>
           <input
@@ -123,10 +119,7 @@ const JoinForm = () => {
         </div>
 
         <div>
-          <label
-            htmlFor="industry"
-            className="block text-gray-700 font-body text-sm mb-2"
-          >
+          <label htmlFor="industry" className="block text-gray-700 font-body text-sm mb-2">
             Industry
           </label>
           <input
@@ -139,10 +132,7 @@ const JoinForm = () => {
         </div>
 
         <div>
-          <label
-            htmlFor="aboutBusiness"
-            className="block text-gray-700 font-body text-sm mb-2"
-          >
+          <label htmlFor="aboutBusiness" className="block text-gray-700 font-body text-sm mb-2">
             About your business
           </label>
           <textarea
@@ -152,7 +142,7 @@ const JoinForm = () => {
             required
             placeholder="Tell us what you do"
             className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary font-body resize-none"
-          ></textarea>
+          />
         </div>
 
         {errorMsg && (

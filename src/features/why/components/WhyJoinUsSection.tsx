@@ -1,6 +1,6 @@
-import { useInView } from "../hooks/useInView";
+import { useInView } from "@/hooks/useInView";
 
-const WhyJoinUs = () => {
+const WhyJoinUsSection = () => {
   const [containerRef, isInView] = useInView();
 
   return (
@@ -22,42 +22,27 @@ const WhyJoinUs = () => {
 
         <div ref={containerRef} className="grid md:grid-cols-2 gap-8 mb-8 max-w-5xl mx-auto">
           <div className={`bg-gray-50 p-6 rounded-lg ${isInView ? "animate-slide-in-left" : "opacity-0"}`} style={{ animationDelay: "0.1s" }}>
-            <h3 className="text-lg font-extrabold text-primary mb-4 font-title tracking-wide">
-              Curated connections
-            </h3>
+            <h3 className="text-lg font-extrabold text-primary mb-4 font-title tracking-wide">Curated connections</h3>
             <p className="text-gray-700 font-body">
-              Everyone in the room is building something. No cold pitching, no
-              surface-level small talk.
+              Everyone in the room is building something. No cold pitching, no surface-level small talk.
             </p>
           </div>
-
           <div className={`bg-gray-50 p-6 rounded-lg ${isInView ? "animate-slide-in-right" : "opacity-0"}`} style={{ animationDelay: "0.2s" }}>
-            <h3 className="text-lg font-extrabold text-primary mb-4 font-title tracking-wide">
-              Real conversations
-            </h3>
+            <h3 className="text-lg font-extrabold text-primary mb-4 font-title tracking-wide">Real conversations</h3>
             <p className="text-gray-700 font-body">
-              Share wins, challenges, and ideas with people who genuinely
-              understand the journey.
+              Share wins, challenges, and ideas with people who genuinely understand the journey.
             </p>
           </div>
-
           <div className={`bg-gray-50 p-6 rounded-lg ${isInView ? "animate-slide-in-left" : "opacity-0"}`} style={{ animationDelay: "0.3s" }}>
-            <h3 className="text-lg font-extrabold text-primary mb-4 font-title tracking-wide">
-              Long-term relationships
-            </h3>
+            <h3 className="text-lg font-extrabold text-primary mb-4 font-title tracking-wide">Long-term relationships</h3>
             <p className="text-gray-700 font-body">
-              This isn't a one-off event. It's a growing community built on
-              trust, consistency, and mutual support.
+              This isn't a one-off event. It's a growing community built on trust, consistency, and mutual support.
             </p>
           </div>
-
           <div className={`bg-gray-50 p-6 rounded-lg ${isInView ? "animate-slide-in-right" : "opacity-0"}`} style={{ animationDelay: "0.4s" }}>
-            <h3 className="text-lg font-extrabold text-primary mb-4 font-title tracking-wide">
-              Relaxed, social atmosphere
-            </h3>
+            <h3 className="text-lg font-extrabold text-primary mb-4 font-title tracking-wide">Relaxed, social atmosphere</h3>
             <p className="text-gray-700 font-body">
-              Good people, good energy, food and drinks included. No pressure,
-              just connection.
+              Good people, good energy, food and drinks included. No pressure, just connection.
             </p>
           </div>
         </div>
@@ -72,4 +57,4 @@ const WhyJoinUs = () => {
   );
 };
 
-export default WhyJoinUs;
+export default WhyJoinUsSection;

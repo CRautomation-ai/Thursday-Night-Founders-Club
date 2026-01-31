@@ -1,19 +1,19 @@
-import Landing from "./sections/Landing";
-import Join from "./sections/Join";
-import Statement from "./sections/Statement";
-import WhyJoinUs from "./sections/WhyJoinUs";
-import Support from "./sections/Support";
-import Contact from "./sections/Contact";
+import LandingSection from "@/features/landing/components/LandingSection";
+import JoinSection from "@/features/join/components/JoinSection";
+import WhyJoinUsSection from "@/features/why/components/WhyJoinUsSection";
+import SupportSection from "@/features/support/components/SupportSection";
+import StatementSection from "@/features/why/components/StatementSection";
+import ContactSection from "@/features/contact/components/ContactSection";
 
 function App() {
   return (
     <div>
-      <Landing />
-      <Join />
-      <WhyJoinUs />
-      <Support />
-      <Statement />
-      <Contact />
+      <LandingSection />
+      <JoinSection />
+      <WhyJoinUsSection />
+      <SupportSection />
+      <StatementSection />
+      <ContactSection />
     </div>
   );
 }

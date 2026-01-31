@@ -1,13 +1,12 @@
-import Footer from "../components/Footer";
-import SocialIcons from "../components/SocialIcons";
-import { useInView } from "../hooks/useInView";
+import Footer from "@/components/Footer";
+import SocialIcons from "@/components/SocialIcons";
+import { useInView } from "@/hooks/useInView";
 
-const Contact = () => {
+const ContactSection = () => {
   const [socialRef, isInView] = useInView();
 
   return (
     <div className="bg-white h-[100vh] flex flex-col overflow-hidden border-t border-gray-500">
-      {/* White Background Section - Top two-thirds */}
       <div className="bg-white py-16 px-4 flex-[2] flex items-center min-h-0">
         <div className="max-w-5xl mx-auto w-full">
           <div className="text-center mb-16">
@@ -22,7 +21,6 @@ const Contact = () => {
             </a>
           </div>
 
-          {/* Social Media Icons */}
           <div ref={socialRef} className={isInView ? "animate-fade-up" : "opacity-0"} style={{ animationDelay: "0.4s" }}>
             <SocialIcons />
           </div>
@@ -34,4 +32,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ContactSection;

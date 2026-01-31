@@ -1,5 +1,5 @@
-import logo from "../assets/tnfc_logo.png";
-import { scrollToSection } from "../utils/scrollTo";
+import logo from "@/assets/tnfc_logo.png";
+import { scrollToSection } from "@/utils/scrollTo";
 
 const Navbar = () => {
   return (
