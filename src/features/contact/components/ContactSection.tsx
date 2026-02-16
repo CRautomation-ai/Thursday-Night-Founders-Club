@@ -14,10 +14,10 @@ const ContactSection = () => {
               Contact us
             </h2>
             <a
-              href="mailto:Thursdaynightfoundersclub@gmail.com"
+              href="mailto:thethursdaynightfoundersclub@gmail.com"
               className="text-primary text-lg hover:text-main font-body"
             >
-              Thursdaynightfoundersclub@gmail.com
+              thethursdaynightfoundersclub@gmail.com
             </a>
           </div>
 
