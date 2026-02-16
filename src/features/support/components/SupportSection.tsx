@@ -1,6 +1,6 @@
 import avassLogo from "@/assets/avass_media_logo.png";
 import anchorAILogo from "@/assets/anchor_ai_logo.png";
-import kjMediaLogo from "@/assets/kj_media_logo.png";
+import authenticTakesLogo from "@/assets/authentic_takes_logo.jpg";
 import naturalVelocityLogo from "@/assets/natural_velocity_logo.png";
 
 const SupportSection = () => {
@@ -47,11 +47,11 @@ const SupportSection = () => {
 
           <div className="flex flex-col">
             <div className="mb-6 aspect-[4/3] bg-white rounded-lg flex items-center justify-center overflow-hidden">
-              <img src={kjMediaLogo} alt="KJ Media Logo" className="max-w-full max-h-full object-contain" />
+              <img src={authenticTakesLogo} alt="Authentic Takes Logo" className="max-w-full max-h-full object-contain" />
             </div>
-            <h3 className="text-xl font-extrabold text-primary text-center mb-4 font-title tracking-wide">KJ Media</h3>
+            <h3 className="text-xl font-extrabold text-primary text-center mb-4 font-title tracking-wide">Authentic Takes</h3>
             <p className="text-gray-700 text-center font-body">
-              KJ Media is a videography and photography studio specialising in high-impact cinematic content for brands. They create visually compelling assets that capture attention, tell authentic stories, and elevate how businesses present themselves across digital platforms.
+              Authentic Takes brings genuine storytelling and creative content to brands. They help businesses connect with their audience through authentic narratives and compelling visual media.
             </p>
           </div>
 
