@@ -1,7 +1,8 @@
-import avassLogo from "@/assets/avass_media_logo.png";
-import anchorAILogo from "@/assets/anchor_ai_logo.png";
-import authenticTakesLogo from "@/assets/authentic_takes_logo.jpg";
-import naturalVelocityLogo from "@/assets/natural_velocity_logo.png";
+import avassLogo from "@/assets/logos/avass_media.png";
+import anchorAILogo from "@/assets/logos/anchor_ai.png";
+import authenticTakesLogo from "@/assets/logos/authentic_takes.jpg";
+import naturalVelocityLogo from "@/assets/logos/natural_velocity.png";
+import experienceEvangelistsLogo from "@/assets/logos/experience_evangelists.jpeg";
 
 const SupportSection = () => {
   return (
@@ -62,6 +63,16 @@ const SupportSection = () => {
             <h3 className="text-xl font-extrabold text-primary text-center mb-4 font-title tracking-wide">Natural Velocity</h3>
             <p className="text-gray-700 text-center font-body">
               Natural Velocity provides innovative solutions that are designed to accelerate the adoption of AI and cybersecurity technologies. Their focus is on ensuring that organisations can embrace these advancements in a responsible and secure manner, leading to increased business value and transformative innovation.
+            </p>
+          </div>
+
+          <div className="flex flex-col md:col-span-2 md:flex md:items-center md:max-w-xl md:mx-auto">
+            <div className="mb-6 aspect-[4/3] bg-white rounded-lg flex items-center justify-center overflow-hidden w-full">
+              <img src={experienceEvangelistsLogo} alt="Experience EVangelists Logo" className="max-w-full max-h-full object-contain" />
+            </div>
+            <h3 className="text-xl font-extrabold text-primary text-center mb-4 font-title tracking-wide">Experience EVangelists</h3>
+            <p className="text-gray-700 text-center font-body">
+              Experience EVangelists is an employee experience design agency reimagining the future of work.
             </p>
           </div>
         </div>
