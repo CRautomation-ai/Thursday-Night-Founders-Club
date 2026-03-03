@@ -6,15 +6,17 @@ const InsideSection = () => {
           Inside Thursday Night Founders Club
         </h2>
 
-        <div className="w-full max-w-4xl mx-auto">
-          <video
-            src="https://www.dropbox.com/scl/fi/reb025g3mpq8n7l29nb9w/Video-11-02-2026-12-47-53-PM.mp4?rlkey=xng8sqx1sofgww2t1mun20yph&e=4&st=cx5jf1qa&dl=1"
-            controls
-            className="w-full rounded-lg"
-            playsInline
-          >
-            Your browser does not support the video tag.
-          </video>
+        <div className="w-full max-w-4xl mx-auto aspect-video rounded-lg overflow-hidden">
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/Q1SNoXmP4CI?si=dsoE8dExRU9eBljM"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+            className="w-full h-full"
+          />
         </div>
       </div>
     </div>
